@@ -1,13 +1,23 @@
 {
   "name": "mt-vue2-modal",
-  "version": "0.1.0",
-  "private": true,
+  "description": "A simple modal for vue 2",
+  "version": "1.0.0",
+  "private": false,
+  "author": {
+    "name": "motea927",
+    "email": "motea927@yahoo.com.tw"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name mt-vue2-modal ./src/index.js && rm ./dist/demo.html",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/mt-vue2-modal.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"

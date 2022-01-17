@@ -1,6 +1,10 @@
 # MT Vue2 Modal
 
-A promise based, hight customize modal
+A promise based, highly customize modal component
+
+## Why use
+
+Suppose your application has many different modal components, if you use [dynamic-component](https://vuejs.org/v2/guide/components-dynamic-async.html), you will find that your business logic is around all of components, that will hard to read and hard maintainable, so use promise based modal component can improve code readability and management.
 
 ## Getting Started
 

@@ -13,7 +13,7 @@ declare interface Modal {
 
 declare module 'vue/types/vue' {
   interface Vue {
-    $$mtModal: Modal
+    $mtModal: Modal
   }
 }
 

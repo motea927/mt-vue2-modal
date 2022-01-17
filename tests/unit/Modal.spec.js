@@ -57,7 +57,63 @@ describe('$mtModal.showDefaultModal', () => {
     )
   })
 
-  it('Default props is work', async () => {
+  it('Content props is work', async () => {
+    const { wrapper } = await initModal()
+    const content = 'test'
+    wrapper.vm.$mtModal.showDefaultModal({
+      componentAttrs: {
+        content: content,
+      },
+    })
+    await flushPromises()
+    expect(wrapper.find('.mt-modal-default-modal__content').text()).toBe(
+      content
+    )
+  })
+
+  it('showCancelButton props is work', async () => {
+    const { wrapper } = await initModal()
+    const showCancelButton = false
+    wrapper.vm.$mtModal.showDefaultModal({
+      componentAttrs: {
+        showCancelButton,
+      },
+    })
+    await flushPromises()
+    expect(
+      wrapper.find('.mt-modal-default-modal__button--cancel').exists()
+    ).toBe(showCancelButton)
+  })
+
+  it('cancelButtonText props is work', async () => {
+    const { wrapper } = await initModal()
+    const cancelButtonText = 'I am cancel button text'
+    wrapper.vm.$mtModal.showDefaultModal({
+      componentAttrs: {
+        cancelButtonText,
+      },
+    })
+    await flushPromises()
+    expect(wrapper.find('.mt-modal-default-modal__button--cancel').text()).toBe(
+      cancelButtonText
+    )
+  })
+
+  it('submitButtonText props is work', async () => {
+    const { wrapper } = await initModal()
+    const submitButtonText = 'I am submit button text'
+    wrapper.vm.$mtModal.showDefaultModal({
+      componentAttrs: {
+        submitButtonText,
+      },
+    })
+    await flushPromises()
+    expect(wrapper.find('.mt-modal-default-modal__button--submit').text()).toBe(
+      submitButtonText
+    )
+  })
+
+  it('Default props (style) is work', async () => {
     const { wrapper } = await initModal()
 
     const styleString = `

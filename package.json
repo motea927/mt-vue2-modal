@@ -1,7 +1,7 @@
 {
   "name": "mt-vue2-modal",
   "description": "A promise based, highly customize modal component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "author": {
     "name": "motea927",

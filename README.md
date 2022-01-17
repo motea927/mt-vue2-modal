@@ -132,7 +132,7 @@ This is default modal method, we recommend to use custom modal to customize your
 
 The API methods accepts these options:
 
-`componentAttrs`: Set default modal style (width, height, color, etc.)
+`componentAttrs`: Set default modal style (width, height, color, etc.) and content
 | Attribute | Type | Default | Description |
 | :-------- | :----: | :-----: | :------------------------------- |
 | width | String | 80vw | Set default modal style width |
@@ -140,6 +140,10 @@ The API methods accepts these options:
 | height | String | 60vh | Set default modal style height |
 | maxHeight | String | 300px | Set default modal style maxHeight |
 | themeColor | String | #ffdf5e | Set default modal theme color |
+| content | String | Lorem | Default modal content |
+| showCancelButton | Boolean | true | show cancel button |
+| cancelButtonText | String | cancel | cancel button text |
+| submitButtonText | String | submit | button text |
 
 `overlay`: Set default modal overlay (background, transition)
 | Attribute | Type | Default | Description |

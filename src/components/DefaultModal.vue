@@ -17,29 +17,21 @@
       ×
     </button>
     <div class="mt-modal-default-modal__content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus temporibus
-      ad voluptatum beatae aliquam, voluptates dolor ipsa suscipit vero
-      voluptatem nam ducimus explicabo maxime, libero aperiam error atque? In,
-      doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-      temporibus ad voluptatum beatae aliquam, voluptates dolor ipsa suscipit
-      vero voluptatem nam ducimus explicabo maxime, libero aperiam error atque?
-      In, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Minus temporibus ad voluptatum beatae aliquam, voluptates dolor ipsa
-      suscipit vero voluptatem nam ducimus explicabo maxime, libero aperiam
-      error atque? In, doloremque.
+      {{ content }}
     </div>
     <footer class="mt-modal-default-modal__footer">
       <button
+        v-if="showCancelButton"
         @click="$emit('closed')"
         class="mt-modal-default-modal__button mt-modal-default-modal__button--cancel"
       >
-        cancel
+        {{ cancelButtonText }}
       </button>
       <button
         @click="$emit('closed', true)"
         class="mt-modal-default-modal__button mt-modal-default-modal__button--submit"
       >
-        submit
+        {{ submitButtonText }}
       </button>
     </footer>
   </div>
@@ -66,6 +58,22 @@ export default {
     themeColor: {
       type: String,
       default: constants.DEFAULT_MODAL.THEME_COLOR,
+    },
+    content: {
+      type: String,
+      default: constants.DEFAULT_MODAL.CONTENT,
+    },
+    showCancelButton: {
+      type: Boolean,
+      default: true,
+    },
+    cancelButtonText: {
+      type: String,
+      default: constants.DEFAULT_MODAL.CANCEL_BUTTON_TEXT,
+    },
+    submitButtonText: {
+      type: String,
+      default: constants.DEFAULT_MODAL.SUBMIT_BUTTON_TEXT,
     },
   },
 }

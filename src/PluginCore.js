@@ -54,6 +54,10 @@ const PluginCore = (Vue) => {
           height: constants.DEFAULT_MODAL.HEIGHT,
           maxHeight: constants.DEFAULT_MODAL.MAX_HEIGHT,
           themeColor: constants.DEFAULT_MODAL.THEME_COLOR,
+          content: constants.DEFAULT_MODAL.content,
+          showCancelButton: true,
+          cancelButtonText: constants.CANCEL_BUTTON_TEXT,
+          submitButtonText: constants.SUBMIT_BUTTON_TEXT,
         },
         overlay: args?.overlay || {
           background: constants.DEFAULT_MODAL_OVERLAY.BACKGROUND,

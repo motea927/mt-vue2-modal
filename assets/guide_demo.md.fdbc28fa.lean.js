@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,a}from"./app.67c98fe3.js";const u='{"title":"Online Demo","description":"","frontmatter":{"sidebarDepth":2},"headers":[],"relativePath":"guide/demo.md","lastUpdated":1642576263879}',d={},s=a("",3),n=[s];function r(l,c,i,_,h,m){return t(),o("div",null,n)}var f=e(d,[["render",r]]);export{u as __pageData,f as default};

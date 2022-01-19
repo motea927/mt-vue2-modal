@@ -6,6 +6,7 @@ export default Object.freeze({
     MAX_HEIGHT: '300px',
     THEME_COLOR: '#ffdf5e',
     TRANSITION_NAME: 'mt-modal-overlay-slide-fade',
+    TITLE: 'title',
     CONTENT: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus temporibus
     ad voluptatum beatae aliquam, voluptates dolor ipsa suscipit vero
     voluptatem nam ducimus explicabo maxime, libero aperiam error atque? In,

@@ -9,7 +9,7 @@
       '--mt-primary': themeColor,
     }"
   >
-    <header class="mt-modal-default-modal__header">title</header>
+    <header class="mt-modal-default-modal__header">{{ title }}</header>
     <button
       @click="$emit('closed')"
       class="mt-modal-default-modal__close-button"
@@ -19,6 +19,7 @@
     <div class="mt-modal-default-modal__content">
       {{ content }}
     </div>
+
     <footer class="mt-modal-default-modal__footer">
       <button
         v-if="showCancelButton"
@@ -58,6 +59,10 @@ export default {
     themeColor: {
       type: String,
       default: constants.DEFAULT_MODAL.THEME_COLOR,
+    },
+    title: {
+      type: String,
+      default: constants.DEFAULT_MODAL.TITLE,
     },
     content: {
       type: String,

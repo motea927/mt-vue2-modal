@@ -57,6 +57,18 @@ describe('$mtModal.showDefaultModal', () => {
     )
   })
 
+  it('Title props is work', async () => {
+    const { wrapper } = await initModal()
+    const title = 'something title'
+    wrapper.vm.$mtModal.showDefaultModal({
+      componentAttrs: {
+        title,
+      },
+    })
+    await flushPromises()
+    expect(wrapper.find('.mt-modal-default-modal__header').text()).toBe(title)
+  })
+
   it('Content props is work', async () => {
     const { wrapper } = await initModal()
     const content = 'test'

@@ -140,6 +140,7 @@ The API methods accepts these options:
 | height | String | 60vh | Set default modal style height |
 | maxHeight | String | 300px | Set default modal style maxHeight |
 | themeColor | String | #ffdf5e | Set default modal theme color |
+| title | String | title | Set default modal title |
 | content | String | Lorem | Default modal content |
 | showCancelButton | Boolean | true | show cancel button |
 | cancelButtonText | String | cancel | cancel button text |
@@ -186,3 +187,10 @@ The API methods accepts these options:
 | componentAttrs | Object | {} | Custom Props |
 | overlay | Object | { background: 'rgba(0, 0, 0, .8)', transitionName: 'mt-modal-overlay-fade' } | Custom Overlay
 | modal | Object | { transitionName: 'mt-modal-overlay-slide-fade' } | Custom modal transition
+
+## Online Demo
+
+We use `codesandbox.io` to show you how to use mt-vue2-modal
+
+- [`showDefaultModal`](https://codesandbox.io/s/mt-vue2-modal-show-default-modal-050lu): Use default modal to show simple text
+- [`show`](https://codesandbox.io/s/mt-vue2-modal-show-3lcxu): Use custom component to show highly customize content and logic
